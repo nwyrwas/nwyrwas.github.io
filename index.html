@@ -1,110 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nicholas Wyrwas | CS-499 Capstone ePortfolio</title>
-<style>
-  body { background-color:#0f0f0f; color:#eaeaea; font-family:Arial,sans-serif; line-height:1.6; margin:40px; }
-  h1,h2,h3 { color:#6cb4ff; }
-  a { color:#79b8ff; text-decoration:none; }
-  a:hover { text-decoration:underline; }
-  .section { border:1px solid #333; padding:20px; margin-bottom:30px; border-radius:8px; background:#181818; }
-  footer { margin-top:40px; border-top:1px solid #333; padding-top:10px; text-align:center; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicholas Wyrwas | CS-499 Capstone Project</title>
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #e6edf3;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #161b22;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 1px solid #30363d;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      color: #58a6ff;
+    }
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 1rem;
+    }
+    h2 {
+      color: #79c0ff;
+      border-bottom: 1px solid #30363d;
+      padding-bottom: 0.3rem;
+    }
+    p, li {
+      font-size: 1rem;
+      color: #c9d1d9;
+    }
+    code, pre {
+      background: #161b22;
+      color: #9ecbff;
+      padding: 0.2rem 0.4rem;
+      border-radius: 6px;
+    }
+    img {
+      display: block;
+      margin: 1.5rem auto;
+      border-radius: 8px;
+      max-width: 100%;
+    }
+    footer {
+      background-color: #161b22;
+      text-align: center;
+      padding: 1rem;
+      color: #8b949e;
+      border-top: 1px solid #30363d;
+    }
+  </style>
 </head>
 <body>
-  <h1>Nicholas Wyrwas</h1>
-  <h2>Software Engineering | CS-499 Capstone ePortfolio</h2>
+  <header>
+    <h1>CS-499 Capstone Project</h1>
+    <p><strong>Animal Shelter Data Analytics Dashboard</strong><br>
+    Created by <strong>Nicholas Wyrwas</strong><br>
+    Southern New Hampshire University | B.S. Computer Science – Software Engineering | November 2025</p>
+  </header>
 
-  <!-- Self-Assessment -->
-  <div class="section">
-    <h2>Professional Self-Assessment</h2>
-    <p>
-      My academic journey at Southern New Hampshire University has equipped me with hands-on experience across software design, full-stack development, secure coding, and emerging systems.
-      I’ve learned to translate user needs into reliable and efficient solutions by leveraging programming languages such as Python, C++, Java, and Kotlin.
-      This portfolio presents my growth as a developer and highlights my ability to apply computing principles to design secure, data-driven, and user-centered systems.
-    </p>
-    <p>
-      The projects featured below represent key milestones — from designing object-oriented systems and securing software to visualizing data and integrating IoT devices.
-      Together, they demonstrate my readiness to contribute meaningfully to professional software engineering environments.
-    </p>
-  </div>
+  <main>
+    <section>
+      <h2>About This Project</h2>
+      <p>This capstone represents the culmination of my Computer Science degree at Southern New Hampshire University, demonstrating my ability to design, secure, and deploy full-stack applications. The Animal Shelter Data Analytics Dashboard integrates <strong>Python Dash</strong>, <strong>MongoDB</strong>, and <strong>Matplotlib</strong> to deliver an interactive, data-driven web experience. It provides real-time insights into animal intake and adoption trends through secure queries, visualizations, and map-based data representation.</p>
+      <p>The project expands upon my original <strong>CS-340 Client-Server Development</strong> artifact by enhancing usability, scalability, and data visualization. It incorporates key software engineering principles, ensuring maintainability, security, and performance through modular design and adherence to SEI CERT and OWASP standards.</p>
+    </section>
 
-  <!-- Code Review -->
-  <div class="section">
-    <h2>Code Review Summary</h2>
-    <p>
-      My capstone began with a detailed code review of the CS-340 Client-Server project.
-      I examined backend structure, error handling, and data validation practices.
-      This review helped define enhancement goals: improving modularity, visual interactivity, and database security.
-      The new architecture integrates the Dash framework for live visualization and introduces user-focused design principles.
-    </p>
-  </div>
+    <section>
+      <h2>Technical Overview</h2>
+      <ul>
+        <li><strong>Frontend:</strong> Dash Components (HTML/CSS/JavaScript rendered in Python)</li>
+        <li><strong>Backend:</strong> Python Flask + Dash callbacks for dynamic UI and database control</li>
+        <li><strong>Database:</strong> MongoDB using parameterized queries and optimized indexing</li>
+        <li><strong>Visualization:</strong> Matplotlib, Plotly, and Leaflet map integration</li>
+        <li><strong>Environment:</strong> Virtualenv, macOS, VS Code, GitHub</li>
+      </ul>
+    </section>
 
-  <!-- Original Artifact -->
-  <div class="section">
-    <h2>Original Artifact – CS-340 Client-Server Development</h2>
-    <p>
-      This Flask and MongoDB application provided CRUD functionality for an animal shelter database.
-      It served as the foundation for my Capstone project by demonstrating practical database management and API handling.
-    </p>
-    <p><a href="https://github.com/nwyrwas/CS-340-12210-M01-Client-Server-Development" target="_blank">View CS-340 Repository</a></p>
-  </div>
+    <section>
+      <h2>Key Features</h2>
+      <ul>
+        <li>Interactive search and filtering of animal shelter records</li>
+        <li>Dynamic charts showing breed and outcome trends</li>
+        <li>Real-time geographic mapping of animal outcomes</li>
+        <li>Secure CRUD and database access with validated input</li>
+        <li>Modern dark-mode UI for accessibility and professional display</li>
+      </ul>
+    </section>
 
-  <!-- Enhanced Artifact -->
-  <div class="section">
-    <h2>Enhanced Artifact – CS-499 Capstone Project Dashboard</h2>
-    <p>
-      The enhanced artifact evolved the CS-340 project into an interactive, data-driven dashboard built using Python Dash, Matplotlib, and Leaflet.
-      It integrates search, filters, charts, and map visualization, allowing users to interact dynamically with live MongoDB data.
-      This project highlights UI/UX design, secure database operations, and scalable architecture.
-    </p>
-    <p><a href="https://github.com/nwyrwas/CS-499-Capstone-Project" target="_blank">View CS-499 Repository</a></p>
-  </div>
+    <section>
+      <h2>Setup & Execution</h2>
+      <p>To run the dashboard locally:</p>
+      <pre><code>git clone https://github.com/nwyrwas/CS-499-Capstone-Project.git
+cd CS-499-Capstone-Project/Final_Project
+python3 -m venv dashenv
+source dashenv/bin/activate   # On macOS/Linux
+dashenv\Scripts\activate      # On Windows
+pip install -r requirements.txt
+python app.py
+</code></pre>
+      <p>Once the server starts, open your browser and navigate to: <strong>http://127.0.0.1:8060</strong></p>
+    </section>
 
-  <!-- Enhancement Narrative -->
-  <div class="section">
-    <h2>Enhancement Narrative and Skills Demonstrated</h2>
-    <p>
-      I implemented enhancements focused on interactivity, security, and modular design.
-      Dash callbacks replaced static routes, Matplotlib generated live analytics, and MongoDB queries were parameterized for safe execution.
-      These improvements strengthened system usability and aligned with professional development standards.
-    </p>
-    <ul>
-      <li><strong>Software Design:</strong> Modular, object-oriented enhancements for maintainability.</li>
-      <li><strong>Data Management:</strong> Efficient query execution and secure CRUD patterns.</li>
-      <li><strong>Security:</strong> Enforced validation, sanitized queries, and reduced attack surface.</li>
-      <li><strong>UI/UX:</strong> Integrated dynamic layout, dark theme, and responsive elements.</li>
-      <li><strong>Collaboration:</strong> Version control and branching workflows through GitHub.</li>
-    </ul>
-  </div>
+    <section>
+      <h2>Preview</h2>
+      <p>Below is a snapshot of the final dashboard interface showcasing live analytics, search functionality, and mapping integration.</p>
+      <img src="screenshot.jpg" alt="Dashboard Preview">
+    </section>
 
-  <!-- Supporting Academic Repositories -->
-  <div class="section">
-    <h2>Supporting Academic Repositories</h2>
-    <ul>
-      <li><a href="https://github.com/nwyrwas/CS-405-15275-Secure-Coding" target="_blank">CS-405 Secure Coding</a> — C++ programs emphasizing buffer overflow prevention, input validation, and CERT standards.</li>
-      <li><a href="https://github.com/nwyrwas/CS-410-ReverseEngineering" target="_blank">CS-410 Software Reverse Engineering</a> — Deconstructed binaries to reconstruct equivalent C++ logic and analyze compiler behavior.</li>
-      <li><a href="https://github.com/nwyrwas/CS-350-13290-M01-Emerging-Sys-Arch-Tech" target="_blank">CS-350 Emerging Systems Architecture</a> — IoT and Raspberry Pi projects integrating GPIO, PWM LEDs, and serial communication.</li>
-      <li><a href="https://github.com/nwyrwas/Full-Stack-Development" target="_blank">Full Stack Development</a> — End-to-end MERN applications showcasing responsive web design and API integration.</li>
-      <li><a href="https://github.com/nwyrwas/CS-305-Software-Security" target="_blank">CS-305 Software Security</a> — Policy-based project outlining cryptography, Triple-A model, and risk management.</li>
-      <li><a href="https://github.com/nwyrwas/CS-300-15095-M01-DSA-Analysis-and-Design" target="_blank">CS-300 Data Structures & Algorithms</a> — Implemented algorithmic efficiency through custom sorting and graph traversal.</li>
-      <li><a href="https://github.com/nwyrwas/CS-330-Comp-Graphic-and-Visualization" target="_blank">CS-330 Computer Graphics</a> — Created OpenGL-based 3D scenes and visual transformations in C++.</li>
-      <li><a href="https://github.com/nwyrwas/Mobile-Architect-and-Programming" target="_blank">Mobile Architecture & Programming</a> — Kotlin-based Android applications demonstrating event handling and UI architecture.</li>
-      <li><a href="https://github.com/nwyrwas/Software-Test-Automation-QA" target="_blank">Software Test Automation & QA</a> — Automated testing suite with JUnit and Selenium frameworks.</li>
-      <li><a href="https://github.com/nwyrwas/Software-Analysis-and-Design" target="_blank">Software Analysis & Design</a> — UML-driven system planning and architectural modeling.</li>
-      <li><a href="https://github.com/nwyrwas/Operating-Platforms" target="_blank">Operating Platforms</a> — OS-level concepts, process management, and shell scripting.</li>
-      <li><a href="https://github.com/nwyrwas/Cplusplus-Program" target="_blank">C++ Programming Projects</a> — Foundational C++ applications reinforcing syntax and logic structures.</li>
-      <li><a href="https://github.com/nwyrwas/SDLC-Program" target="_blank">SDLC Program</a> — Applied software life cycle stages from requirements to deployment.</li>
-      <li><a href="https://github.com/nwyrwas/CS-370-16865-M01-Current-Emerging-Trends-in-CS" target="_blank">CS-370 Current & Emerging Trends</a> — Applied reinforcement learning through Python-based AI game agents.</li>
-      <li><a href="https://github.com/nwyrwas/DAD-Projects" target="_blank">DAD Projects</a> — Data analysis and dashboard integration exercises with real-world datasets.</li>
-      <li><a href="https://github.com/nwyrwas/Personal-Projects" target="_blank">Personal Projects</a> — Independent creations including AI chatbots and automation utilities.</li>
-    </ul>
-  </div>
+    <section>
+      <h2>Reflection & Skills Demonstrated</h2>
+      <p>This project demonstrates my ability to combine theory and practice across multiple domains — including software architecture, database management, and secure coding. By evolving an existing artifact into a complex full-stack solution, I showcased my capability to plan, implement, and refine systems aligning with real-world industry standards.</p>
+      <p>Key skills demonstrated include full-stack development, data analysis, UI/UX design, security compliance, and the use of version control to maintain collaborative code integrity.</p>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Nicholas Wyrwas | <a href="https://www.linkedin.com/in/nicholas-wyrwas/" target="_blank">LinkedIn</a> | <a href="https://github.com/nwyrwas" target="_blank">GitHub</a></p>
+    <p>© 2025 Nicholas Wyrwas | <a href="https://github.com/nwyrwas" style="color:#58a6ff;">View GitHub Profile</a></p>
   </footer>
 </body>
 </html>
