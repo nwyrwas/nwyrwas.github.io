@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional portfolio and CS-499 Capstone showcase of Nicholas Wyrwas — Software Engineer, AI & Full-Stack Developer.">
+  <title>Nicholas Wyrwas | Portfolio & Capstone</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif; background:#0e1117; color:#d0d0d0; line-height:1.6; }
+    a { color:#58a6ff; text-decoration:none; } a:hover { text-decoration:underline; }
+    header { text-align:center; padding:60px 20px 40px; background:linear-gradient(135deg,#0e1117,#161b22); border-bottom:1px solid #30363d; }
+    header h1 { color:#fff; font-size:2.7rem; }
+    header h2 { color:#a0a0a0; font-weight:400; margin-top:8px; font-size:1.2rem; }
+    nav { display:flex; justify-content:center; gap:25px; background:#161b22; padding:15px 0; border-bottom:1px solid #30363d; flex-wrap:wrap; }
+    nav a { font-weight:600; }
+    section { max-width:1100px; margin:auto; padding:60px 10%; }
+    h2.section-title { color:#58a6ff; font-size:1.8rem; margin-bottom:20px; border-bottom:2px solid #30363d; display:inline-block; padding-bottom:4px; }
+    p { margin-bottom:15px; }
+    .projects-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:25px; margin-top:25px; }
+    .card { background:#161b22; border:1px solid #30363d; border-radius:10px; padding:20px; transition:transform .2s ease, box-shadow .2s ease; }
+    .card:hover { transform:translateY(-5px); box-shadow:0 5px 20px rgba(0,0,0,.3); }
+    .card h3 { color:#fff; margin-bottom:10px; }
+    .card a.btn { display:inline-block; background:#238636; color:#fff; padding:8px 14px; border-radius:6px; margin-top:10px; }
+    .card a.btn:hover { background:#2ea043; }
+    .capstone-section { background:#0d1117; border-top:1px solid #30363d; border-bottom:1px solid #30363d; padding:60px 10%; }
+    footer { text-align:center; padding:40px 10px; background:#0d1117; border-top:1px solid #30363d; color:#888; }
+    footer a { color:#58a6ff; }
+    @media (max-width:768px){ header h1{font-size:2rem;} section{padding:40px 5%;} }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Nicholas Wyrwas</h1>
+  <h2>Software Engineer | AI & Full-Stack Developer | U.S. Marine Corps Veteran</h2>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#capstone">Capstone</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <p>
+    I am a Software Engineering graduate from Southern New Hampshire University (B.S. Computer Science – Software Engineering, Nov 2025) and a U.S. Marine Corps veteran. I specialize in secure, data-driven, and full-stack software solutions that integrate artificial intelligence and system automation.
+  </p>
+  <p>
+    My experience includes developing production-grade web applications, building AI-assisted tools using Python and JavaScript frameworks, and designing embedded systems on Raspberry Pi. I’m passionate about using technology to solve complex, real-world challenges with creativity and precision.
+  </p>
+  <p>
+    📄 <strong>Resume:</strong> <a href="Nicholas Wyrwas Resume PDF.pdf" target="_blank">View / Download Resume (PDF)</a>
+  </p>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">Highlighted Projects</h2>
+  <div class="projects-grid">
+    <div class="card">
+      <h3>CS-499 Capstone Project – Animal Shelter Analytics Dashboard</h3>
+      <p>
+        Interactive data visualization dashboard integrating MongoDB, Python Dash, and Matplotlib to analyze adoption patterns, filter rescues by type, and display live maps. Demonstrates secure CRUD operations and clean UI design.
+      </p>
+      <a href="https://nwyrwas.github.io/CS-499-Capstone-Project/" class="btn">View Capstone</a>
+    </div>
+    <div class="card">
+      <h3>CS-405 Secure Coding</h3>
+      <p>
+        Implemented SEI CERT and OWASP standards in C++ to mitigate buffer overflows, numeric overflows, and injection vulnerabilities while applying unit testing and static analysis.
+      </p>
+      <a href="https://github.com/nwyrwas/CS-405-Secure-Coding" class="btn">View Repo</a>
+    </div>
+    <div class="card">
+      <h3>Reality AI – Generative AI Engineer Internship</h3>
+      <p>
+        Developed RAG-based educational chatbots using LangChain and Redis Vector Search, optimizing semantic retrieval and cloud deployment via Google Cloud Run.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Connectify – Full Stack Django Platform</h3>
+      <p>
+        Created RESTful Django APIs with React front-end integration and CI/CD pipelines to improve system reliability, UX, and data analytics capabilities.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="capstone" class="capstone-section">
+  <h2 class="section-title">📊 CS-499 Capstone Project Overview</h2>
+  <p>
+    My capstone project represents the culmination of my SNHU Computer Science degree. It integrates software design, secure coding, data visualization, and system architecture concepts learned throughout my coursework. The project evolved from the original <strong>CS-340 Client-Server Development</strong> artifact — a Flask-based CRUD application — into a full data analytics dashboard using <strong>Dash</strong>, <strong>MongoDB</strong>, and <strong>Matplotlib</strong>.
+  </p>
+  <p>
+    The application securely retrieves animal rescue data, filters by mission type, and dynamically visualizes patterns through charts and geographic mapping. It showcases mastery of modular architecture, secure query handling, and UI/UX design.
+  </p>
+
+  <h3 style="color:#58a6ff;margin-top:25px;">Key Enhancements</h3>
+  <ul style="margin-left:20px;">
+    <li>Re-engineered Flask CRUD app into a responsive Dash framework</li>
+    <li>Implemented parameterized MongoDB queries to prevent injection</li>
+    <li>Added dynamic Matplotlib visualization and Leaflet map integration</li>
+    <li>Optimized data structures and query performance</li>
+    <li>Applied dark-mode UI and accessibility best practices</li>
+  </ul>
+
+  <h3 style="color:#58a6ff;margin-top:25px;">Supporting Files</h3>
+  <ul style="margin-left:20px;">
+    <li><strong>Milestone 2.docx:</strong> Artifact selection and enhancement plan</li>
+    <li><strong>Milestone Three Algorithms and Data Structures.docx:</strong> Implementation of optimized logic and data handling</li>
+    <li><strong>Milestone Four.docx:</strong> Final report summarizing enhancements, testing, and integration</li>
+    <li><strong>Professional Self Assessment.docx:</strong> Reflection on learning, skill development, and industry alignment</li>
+    <li><strong>screenshot.jpg:</strong> Visual preview of the dashboard UI</li>
+  </ul>
+
+  <h3 style="color:#58a6ff;margin-top:25px;">Professional Self-Assessment Summary</h3>
+  <p>
+    My academic journey strengthened my ability to connect secure coding, data analytics, and software architecture into cohesive systems. Through courses such as CS-305 Software Security, CS-405 Secure Coding, and CS-410 Software Reverse Engineering, I gained the expertise to design software that is efficient, maintainable, and secure by default.  
+    The capstone project embodies these principles and demonstrates readiness for professional engineering roles.
+  </p>
+
+  <h3 style="color:#58a6ff;margin-top:25px;">Code Review Video</h3>
+  <p>
+    A complete code walkthrough and demonstration will be available on YouTube upon final submission.  
+    <em>Link coming soon</em>.
+  </p>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">Technical Skills</h2>
+  <p><strong>Languages:</strong> Python, JavaScript, Java, C++, C, SQL, HTML, CSS, Kotlin</p>
+  <p><strong>Frameworks & Tools:</strong> Flask, Dash, Django, React, Node.js, MongoDB, SQLite, Docker, GitHub Actions</p>
+  <p><strong>AI & ML:</strong> LangChain, TensorFlow, RAG Pipelines, Redis Vector Search, OpenAI API</p>
+  <p><strong>Security:</strong> SEI CERT, OWASP Top 10, static/dynamic analysis, defense-in-depth</p>
+  <p><strong>UI/UX:</strong> Figma, responsive web design, user testing, accessibility</p>
+</section>
+
+<section id="contact">
+  <h2 class="section-title">Contact</h2>
+  <p>
+    <strong>Email:</strong> <a href="mailto:nwyrwas@gmail.com">nwyrwas@gmail.com</a><br>
+    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nicholas-wyrwas/">linkedin.com/in/nicholas-wyrwas</a><br>
+    <strong>GitHub:</strong> <a href="https://github.com/nwyrwas">github.com/nwyrwas</a>
+  </p>
+</section>
+
+<footer>
+  <p>© 2025 Nicholas Wyrwas | Portfolio and Capstone built with 💻 using GitHub Pages</p>
+</footer>
+
+</body>
+</html>
